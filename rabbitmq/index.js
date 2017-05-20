@@ -1,6 +1,6 @@
 'use strict';
 
-const amqp = require('amqplib');
+const createConnection = require('./connection');
 const createListener = require('./listener');
 
 function loadListeners(conn) {
@@ -18,10 +18,6 @@ function loadListeners(conn) {
           return reject(false);
         }
       }));
-}
-
-function createConnection() {
-  return amqp.connect('amqp://guest:guest@localhost:5672');
 }
 
 function main() {

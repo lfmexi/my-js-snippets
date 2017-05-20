@@ -19,8 +19,8 @@ function channelAssert(channel, { exchange, queue, pattern }) {
   channel.assertQueue(queue.name, {
     durable: queue.durable,
     arguments: {
-      'x-deadLetterExchange': '',
-      'x-deadLetterRoutingKey': queue.deadLetter,
+      'x-dead-letter-exchange': '',
+      'x-dead-letter-routingKey': queue.deadLetter,
     }
   });
   if (exchange.name) {

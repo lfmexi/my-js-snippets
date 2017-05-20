@@ -1,5 +1,5 @@
 {
-  "name": "my-js-snippets/rabbitmq",
+  "name": "my-js-snippets-rabbitmq",
   "version": "1.0.0",
   "description": "My JS Snippets for RabbitMQ connection",
   "main": "index.js",
